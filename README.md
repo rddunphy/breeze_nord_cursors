@@ -1,4 +1,11 @@
-Building the Bridge Icon set from the Inkscape SVG:
+# Breeze Nord cursors
+
+[Nord theme](https://www.nordtheme.com/) version of the KDE [Breeze cursors](https://github.com/KDE/breeze/tree/master/cursors/Breeze).
+
+To install, copy the `Breeze Nord` directory to `/usr/share/icons`.
+
+
+## Building the Bridge Icon set from the Inkscape SVG:
 
 1. Ensure you have inkscape and xcursorgen installed.
 2. Run build.sh in a terminal. The script may take several minutes.
