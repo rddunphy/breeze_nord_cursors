@@ -2,8 +2,9 @@
 
 [Nord theme](https://www.nordtheme.com/) version of the KDE [Breeze cursors](https://github.com/KDE/breeze/tree/master/cursors/Breeze).
 
-To install, copy the `Breeze Nord` directory to `/usr/share/icons`.
+To install, copy the `Breeze_Nord` directory to `/usr/share/icons`.
 
+![Screenshot](screenshot.png)
 
 ## Building the Bridge Icon set from the Inkscape SVG:
 
