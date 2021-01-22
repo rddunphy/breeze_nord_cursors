@@ -61,15 +61,15 @@ for CUR in src/config/*.cursor; do
 	echo -ne "\033[0KGenerating simple cursor pixmaps... $BASENAME\\r"
 
 	if [ "$DIR1X/$BASENAME.png" -ot $RAWSVG ] ; then
-		inkscape -i $BASENAME -d 90  -f $RAWSVG -e "$DIR1X/$BASENAME.png" > /dev/null
+		inkscape -i $BASENAME -d 90  -o "$DIR1X/$BASENAME.png" $RAWSVG > /dev/null 
 	fi
 
 	if [ "$DIR1_5X/$BASENAME.png" -ot $RAWSVG ] ; then
-		inkscape -i $BASENAME -d 135 -f $RAWSVG -e "$DIR1_5X/$BASENAME.png" > /dev/null
+		inkscape -i $BASENAME -d 135 -o "$DIR1_5X/$BASENAME.png" $RAWSVG > /dev/null
 	fi
 
 	if [ "$DIR2X/$BASENAME.png" -ot $RAWSVG ] ; then
-		inkscape -i $BASENAME -d 180 -f $RAWSVG -e "$DIR2X/$BASENAME.png" > /dev/null
+		inkscape -i $BASENAME -d 180 -o "$DIR2X/$BASENAME.png" $RAWSVG > /dev/null
 	fi
 done
 echo -e "\033[0KGenerating simple cursor pixmaps... DONE"
@@ -81,27 +81,27 @@ do
 	echo -ne "\033[0KGenerating animated cursor pixmaps... $i / 23 \\r"
 
 	if [ "$DIR1X/progress-$i.png" -ot $RAWSVG ] ; then
-		inkscape -i progress-$i -d 90  -f $RAWSVG -e "$DIR1X/progress-$i.png" > /dev/null
+		inkscape -i progress-$i -d 90  -o "$DIR1X/progress-$i.png" $RAWSVG > /dev/null
 	fi
 
     if [ "$DIR1_5X/progress-$i.png" -ot $RAWSVG ] ; then
-        inkscape -i progress-$i -d 135 -f $RAWSVG -e "$DIR1_5X/progress-$i.png" > /dev/null
+        inkscape -i progress-$i -d 135 -o "$DIR1_5X/progress-$i.png" $RAWSVG > /dev/null
 	fi
 
 	if [ "$DIR2X/progress-$i.png" -ot $RAWSVG ] ; then
-		inkscape -i progress-$i -d 180 -f $RAWSVG -e "$DIR2X/progress-$i.png" > /dev/null
+		inkscape -i progress-$i -d 180 -o "$DIR2X/progress-$i.png" $RAWSVG > /dev/null
 	fi
 
 	if [ "$DIR1X/wait-$i.png" -ot $RAWSVG ] ; then
-		inkscape -i wait-$i -d 90  -f $RAWSVG -e "$DIR1X/wait-$i.png" > /dev/null
+		inkscape -i wait-$i -d 90  -o "$DIR1X/wait-$i.png" $RAWSVG > /dev/null
 	fi
 
 	if [ "$DIR1_5X/wait-$i.png" -ot $RAWSVG ] ; then
-		inkscape -i wait-$i -d 135  -f $RAWSVG -e "$DIR1_5X/wait-$i.png" > /dev/null
+		inkscape -i wait-$i -d 135  -o "$DIR1_5X/wait-$i.png" $RAWSVG > /dev/null
 	fi
 
 	if [ "$DIR2X/wait-$i.png" -ot $RAWSVG ] ; then
-		inkscape -i wait-$i -d 180 -f $RAWSVG -e "$DIR2X/wait-$i.png" > /dev/null
+		inkscape -i wait-$i -d 180 -o "$DIR2X/wait-$i.png" $RAWSVG > /dev/null
 	fi
 done
 echo -e "\033[0KGenerating animated cursor pixmaps... DONE"
